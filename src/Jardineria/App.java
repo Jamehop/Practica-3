@@ -20,7 +20,7 @@ public class App {
         pedidosDao = new pedidosDao(clientesDao);
 
         try {
-            clientesDao.save(new BuilderCliente(66, "Dario", "zaragoza", 696969696, 69.69, "9669p").Buildeo());
+            clientesDao.save(new BuilderCliente(66, "Dario", "zaragoza", 1234, 12.34, "8o").Buildeo());
         } catch (Exception e) {
             System.out.println("Error: el cliente esta introducido \n" + clientesDao);
 

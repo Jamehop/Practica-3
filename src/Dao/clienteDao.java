@@ -10,7 +10,7 @@ public class clienteDao implements Dao<cliente> {
 
     public clienteDao() {
 
-        clientes.add(new cliente(1234, "nombre_cliente", "domicilio", null, null, 660442980, 1200.7,
+        clientes.add(new cliente(1234, "nombre_cliente", "domicilio", null, null, 123421232, 1234.7,
                 "codigo_empleado_rep_ventas"));
     }
 
@@ -48,10 +48,10 @@ public class clienteDao implements Dao<cliente> {
     @Override
     public void update(cliente t, String[] params) {
 
-        t.setNombre_cliente("predeterminado");
-        t.setCodigo_cliente(111);
+        t.setNombre_cliente("cliente");
+        t.setCodigo_cliente(123);
         t.setDomicilio("domicilio");
-        t.setLimite_credit(6666666);
+        t.setLimite_credit(123451);
         t.setCodigo_empleado_rep_ventas("codigo_empleado_rep_ventas");
 
     }

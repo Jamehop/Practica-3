@@ -41,9 +41,6 @@ public class cliente {
     public void setNombre_cliente(String nombre_cliente) {
         this.nombre_cliente = nombre_cliente;
     }
-
-    
-
     public String getEmail() {
         return email;
     }
@@ -91,10 +88,4 @@ public class cliente {
     public void setCodigo_empleado_rep_ventas(String codigo_empleado_rep_ventas) {
         this.codigo_empleado_rep_ventas = codigo_empleado_rep_ventas;
     }
-    
-
-    
-
-    
-
 }

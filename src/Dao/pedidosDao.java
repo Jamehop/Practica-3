@@ -12,7 +12,7 @@ public class pedidosDao implements Dao<pedido> {
     public pedidosDao() {
 
         pedidos.add(new pedido(1111, 1111 - 2, new Calendar.Builder().setDate(2020, Calendar.NOVEMBER, 2).build(),
-                new Calendar.Builder().setDate(2021, Calendar.NOVEMBER, 2).build(), "ahi va", "cuando llega?"));
+                new Calendar.Builder().setDate(2021, Calendar.NOVEMBER, 2).build(), "Comming", "No va comming"));
     }
 
     public pedidosDao(Dao<cliente> clientesDao) {
@@ -36,9 +36,9 @@ public class pedidosDao implements Dao<pedido> {
             if (pedido.getCodigo_pedido() == t.getCodigo_pedido()) { //
                 if (pedido.getCodigo_pedido_cliente() == t.getCodigo_pedido_cliente()) {
 
-                    throw new Exception("duplicar pedidos malo");
+                    throw new Exception("error");
                 }
-                System.out.println("pedido ya existe");
+                System.out.println("El pedido ya fue creado");
 
                 return;
             }
@@ -53,10 +53,10 @@ public class pedidosDao implements Dao<pedido> {
         Calendar mifecha = Calendar.getInstance();
         mifecha.add(Calendar.DAY_OF_MONTH, 40);
 
-        t.setCodigo_pedido(112);
-        t.setCodigo_pedido_cliente(111);
-        t.setComentarios("vamos ya");
-        t.setEstado("esperando");
+        t.setCodigo_pedido(123);
+        t.setCodigo_pedido_cliente(123);
+        t.setComentarios("Va");
+        t.setEstado("Esperando");
         t.setFecha_entrega(Calendar.getInstance());
         t.setFecha_pedido(mifecha);
 
